@@ -13,7 +13,7 @@
           color: mix(white, $val, $i * 20);
         }
         .bg_#{$key}_light#{$i} {
-          background-color: mix(white, $val, $i * 10);
+          background-color: mix(white, $val, $i * 20);
         }
       }
   
@@ -23,7 +23,7 @@
           color: mix(black, $val, $i * 20);
         }
         .bg_#{$key}_dark#{$i} {
-          background-color: mix(black, $val, $i * 10);
+          background-color: mix(black, $val, $i * 20);
         }
       }
     }

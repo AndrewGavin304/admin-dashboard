@@ -1,5 +1,33 @@
-btn {
-    &-small {
-        padding: 5px;
+.btn {
+    height: 30px;
+    border: 0px;
+    background: none;
+}
+
+.sidebar {
+    button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 1fr;
+    padding: 10px;
+    color: white;
+    }
+
+    &__logo {
+        height: 60px;
+        font-size: 30px;
+    }
+
+    &__communities {
+        margin-bottom: 50px;
+    }
+}
+
+.header{
+
+    .btn {
+    align-self: flex-start;
+    height: 100%;
     }
 }
