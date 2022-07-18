@@ -8,6 +8,10 @@ $colors: (
     "secondary": #64B332,
     "accent": #AFC835,
     "gray": #abaf9f,
+    "white": #FFFFFF,
 );
 
 $base-border-radius: 15px;
+$base-border-radius-half: 8px;
+$base-shadow-top: rgba(0, 0, 0, 0.15) 0px 3.6px 4px -3px;
+$base-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;

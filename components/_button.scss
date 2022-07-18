@@ -1,17 +1,17 @@
 .btn {
     height: 30px;
     border: 0px;
-    background: none;
 }
 
 .sidebar {
-    button {
+    .btn {
     display: flex;
     align-items: center;
     gap: 8px;
     width: 1fr;
     padding: 10px;
     color: white;
+    background: none;
     }
 
     &__logo {
@@ -29,5 +29,20 @@
     .btn {
     align-self: flex-start;
     height: 100%;
+    background: none;
+    }
+}
+
+.greeting {
+    .btn {
+        border-radius: $base-border-radius;
+        color: white;
+        padding: 5px 25px;
+    }
+}
+
+.projects {
+    .btn {
+        background: none;
     }
 }

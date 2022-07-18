@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
-.text-primary {
+.text_primary {
   color: #27565A;
 }
 
-.bg-primary {
+.bg_primary {
   background-color: #27565A;
 }
 
@@ -71,11 +71,11 @@
   background-color: #081112;
 }
 
-.text-secondary {
+.text_secondary {
   color: #64B332;
 }
 
-.bg-secondary {
+.bg_secondary {
   background-color: #64B332;
 }
 
@@ -143,11 +143,11 @@
   background-color: #14240a;
 }
 
-.text-accent {
+.text_accent {
   color: #AFC835;
 }
 
-.bg-accent {
+.bg_accent {
   background-color: #AFC835;
 }
 
@@ -215,11 +215,11 @@
   background-color: #23280b;
 }
 
-.text-gray {
+.text_gray {
   color: #abaf9f;
 }
 
-.bg-gray {
+.bg_gray {
   background-color: #abaf9f;
 }
 
@@ -287,6 +287,14 @@
   background-color: #222320;
 }
 
+.text_white {
+  color: #FFFFFF;
+}
+
+.bg_white {
+  background-color: #FFFFFF;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -294,7 +302,7 @@ html, body {
 
 .main {
   display: grid;
-  grid-template: auto auto auto/minmax(200px, 300px) 4fr;
+  grid-template: 70px 85px auto/minmax(225px, 300px) 4fr;
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -329,25 +337,38 @@ img {
 
 .header {
   display: flex;
-  margin: 15px 30px;
-  gap: 12px;
+  margin: 15px 30px 0px 30px;
+  gap: 20px;
   align-items: center;
+  height: 50px;
 }
 .header__search-bar {
   border-radius: 15px;
   border: none;
   height: 22px;
   flex-basis: 40%;
-  margin-right: 30%;
+  margin-right: 45%;
+}
+.header__username {
+  white-space: nowrap;
 }
 
 .greeting {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  margin: 0px 30px;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 .greeting__text {
   display: flex;
   flex-direction: column;
+  margin-right: 60%;
+}
+.greeting__icon {
+  height: 70px;
+  width: 70px;
 }
 
 .main-content {
@@ -358,17 +379,43 @@ img {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: 30 auto;
   grid-column: 1;
+  grid-row: 1/-1;
+  box-shadow: inset rgba(0, 0, 0, 0.15) 0px 3.6px 4px -3px;
+  padding: 25px 20px;
 }
 .projects__header {
   grid-column: 1/-1;
+  height: 20px;
+}
+.projects__card {
+  border-radius: 8px;
+  margin: 14px;
+  padding: 0px 0px 0px 8px;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+.projects__buttons {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  margin: 5% 0% 0% 50%;
+}
+.projects__card-inner {
+  background-color: white;
+  width: 85%;
+  height: 80%;
+  padding: 5% 10% 20% 5%;
 }
 
 .announcements {
   display: grid;
   grid-column: 2;
   grid-row: 1;
+  box-shadow: inset rgba(0, 0, 0, 0.15) 0px 3.6px 4px -3px;
 }
 .announcements__header {
   grid-column: 1/-1;
@@ -382,16 +429,16 @@ img {
 .btn {
   height: 30px;
   border: 0px;
-  background: none;
 }
 
-.sidebar button {
+.sidebar .btn {
   display: flex;
   align-items: center;
   gap: 8px;
   width: 1fr;
   padding: 10px;
   color: white;
+  background: none;
 }
 .sidebar__logo {
   height: 60px;
@@ -404,4 +451,15 @@ img {
 .header .btn {
   align-self: flex-start;
   height: 100%;
+  background: none;
+}
+
+.greeting .btn {
+  border-radius: 15px;
+  color: white;
+  padding: 5px 25px;
+}
+
+.projects .btn {
+  background: none;
 }/*# sourceMappingURL=index.css.map */

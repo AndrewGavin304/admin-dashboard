@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/index.css">
 </head>
-<body class="main">
+<body class="main bg_white">
   <div class="sidebar bg_primary_light2">
     <button class="btn sidebar__logo"><img src="resources/images/dashboard.svg" alt=""><span>&nbsp;Dashboard</span></button>
     <button class="btn sidebar__home"><img src="resources/images/home.svg" alt="">&nbsp;Home</button>
@@ -25,73 +25,85 @@
     <input type="text" class="header__search-bar bg_gray_light4">
     <button class="btn header__notification"><img src="resources/images/notifications.svg" alt=""></button>
     <button class="btn"><img src="https://joeschmoe.io/api/v1/andrewwww" alt="" class="pfp header__icon"></button>
-    <span class="header__username">Andrew Gavin</span>
+    <span class="header__username"><b>Andrew Gavin</b></span>
   </div>
   <div class="greeting">
     <img src="https://joeschmoe.io/api/v1/andrewwww" alt="" class="greeting__icon pfp">
     <div class="greeting__text">
-      <span class="greeting__opening">Hey there,</span>
-      <span class="greeting__username">Andrew Gavin (@AndrewGavin304)</span>
+      <span class="greeting__opening"><strong>Hey there,</strong></span>
+      <span class="greeting__username"><strong>Andrew Gavin (@AndrewGavin304)</strong></span>
     </div>
-    <button class="btn greeting__new">New</button>
-    <button class="btn greeting__upload">Upload</button>
-    <button class="btn greeting__share">Share</button>
+    <button class="btn greeting__new bg_primary_light2">New</button>
+    <button class="btn greeting__upload bg_primary_light2">Upload</button>
+    <button class="btn greeting__share bg_primary_light2">Share</button>
   </div>
-  <div class="main-content">
+  <div class="main-content bg_gray_light4">
     <div class="projects">
-      <span class="projects__header">Your Projects</span>
-      <div class="projects__card">
-        <span class="projects__name">Lorem, ipsum dolor.</span>
-        <p class="projects__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis eos quos rem porro labore, earum possimus qui. Similique, non dolores.</p>
-        <div class="projects__buttons">
-          <button class="btn projects__favorite"><img src="resources/images/favorite.svg" alt=""></button>
-          <button class="btn projects__watch"><img src="resources/images/watch.svg" alt=""></button>
-          <button class="btn projects__fork"><img src="resources/images/fork.svg" alt=""></button>
+      <span class="projects__header"><strong>Your Projects</strong></span>
+      <div class="projects__card bg_accent">
+        <div class="projects__card-inner">
+          <span class="projects__name">Lorem, ipsum dolor.</span>
+          <p class="projects__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis eos quos rem porro labore, earum possimus qui. Similique, non dolores.</p>
+          <div class="projects__buttons">
+            <button class="btn projects__favorite"><img src="resources/images/favorite.svg" alt=""></button>
+            <button class="btn projects__watch"><img src="resources/images/watch.svg" alt=""></button>
+            <button class="btn projects__fork"><img src="resources/images/fork.svg" alt=""></button>
+        </div>
         </div>
       </div>
-      <div class="projects__card">
-        <span class="projects__name">Laboriosam, illum explicabo!</span>
-        <p class="projects__text">Alias, modi culpa velit magnam commodi exercitationem necessitatibus odit, unde voluptates non obcaecati aliquid nobis iste, quos eligendi facere facilis!</p>
-        <div class="projects__buttons">
-          <button class="btn projects__favorite"><img src="resources/images/favorite.svg" alt=""></button>
-          <button class="btn projects__watch"><img src="resources/images/watch.svg" alt=""></button>
-          <button class="btn projects__fork"><img src="resources/images/fork.svg" alt=""></button></button>
+      <div class="projects__card bg_accent">
+        <div class="projects__card-inner">
+          <span class="projects__name">Laboriosam, illum explicabo!</span>
+          <p class="projects__text">Alias, modi culpa velit magnam commodi exercitationem necessitatibus odit, unde voluptates non obcaecati aliquid nobis iste, quos eligendi facere facilis!</p>
+          <div class="projects__buttons">
+            <button class="btn projects__favorite"><img src="resources/images/favorite.svg" alt=""></button>
+            <button class="btn projects__watch"><img src="resources/images/watch.svg" alt=""></button>
+            <button class="btn projects__fork"><img src="resources/images/fork.svg" alt=""></button></button>
+        </div>
         </div>
       </div>
-      <div class="projects__card">
-        <span class="projects__name">Sequi, corporis asperiores!</span>
-        <p class="projects__text">Optio odit repellat labore molestiae in. Repellat odit commodi ad architecto! Asperiores, magni quod ex harum explicabo a veniam minima?</p>
-        <div class="projects__buttons">
-          <button class="btn projects__favorite"><img src="resources/images/favorite.svg" alt=""></button>
-          <button class="btn projects__watch"><img src="resources/images/watch.svg" alt=""></button>
-          <button class="btn projects__fork"><img src="resources/images/fork.svg" alt=""></button></button>
+      <div class="projects__card bg_accent">
+          <div class="projects__card-inner">
+            <span class="projects__name">Sequi, corporis asperiores!</span>
+            <p class="projects__text">Optio odit repellat labore molestiae in. Repellat odit commodi ad architecto! Asperiores, magni quod ex harum explicabo a veniam minima?</p>
+            <div class="projects__buttons">
+              <button class="btn projects__favorite"><img src="resources/images/favorite.svg" alt=""></button>
+              <button class="btn projects__watch"><img src="resources/images/watch.svg" alt=""></button>
+              <button class="btn projects__fork"><img src="resources/images/fork.svg" alt=""></button></button>
+          </div>
         </div>
       </div>
-      <div class="projects__card">
-        <span class="projects__name">Aliquid, architecto facilis.</span>
-        <p class="projects__text">Itaque asperiores assumenda pariatur perferendis atque adipisci repellendus quasi debitis consequatur, eligendi ducimus et quos laboriosam sint, labore dolorum commodi!</p>
-        <div class="projects__buttons">
-          <button class="btn projects__favorite"><img src="resources/images/favorite.svg" alt=""></button>
-          <button class="btn projects__watch"><img src="resources/images/watch.svg" alt=""></button>
-          <button class="btn projects__fork"><img src="resources/images/fork.svg" alt=""></button></button>
+      <div class="projects__card bg_accent">
+        <div class="projects__card-inner">
+          <span class="projects__name">Aliquid, architecto facilis.</span>
+          <p class="projects__text">Itaque asperiores assumenda pariatur perferendis atque adipisci repellendus quasi debitis consequatur, eligendi ducimus et quos laboriosam sint, labore dolorum commodi!</p>
+          <div class="projects__buttons">
+            <button class="btn projects__favorite"><img src="resources/images/favorite.svg" alt=""></button>
+            <button class="btn projects__watch"><img src="resources/images/watch.svg" alt=""></button>
+            <button class="btn projects__fork"><img src="resources/images/fork.svg" alt=""></button></button>
+        </div>
         </div>
       </div>
-      <div class="projects__card">
-        <span class="projects__name">Numquam, earum neque.</span>
-        <p class="projects__text">Reiciendis aperiam cum, maxime soluta ut veritatis vitae commodi unde quia atque placeat ex ullam et nulla earum, error esse?</p>
-        <div class="projects__buttons">
-          <button class="btn projects__favorite"><img src="resources/images/favorite.svg" alt=""></button>
-          <button class="btn projects__watch"><img src="resources/images/watch.svg" alt=""></button>
-          <button class="btn projects__fork"><img src="resources/images/fork.svg" alt=""></button></button>
+      <div class="projects__card bg_accent">
+        <div class="projects__card-inner">
+          <span class="projects__name">Numquam, earum neque.</span>
+          <p class="projects__text">Reiciendis aperiam cum, maxime soluta ut veritatis vitae commodi unde quia atque placeat ex ullam et nulla earum, error esse?</p>
+          <div class="projects__buttons">
+            <button class="btn projects__favorite"><img src="resources/images/favorite.svg" alt=""></button>
+            <button class="btn projects__watch"><img src="resources/images/watch.svg" alt=""></button>
+            <button class="btn projects__fork"><img src="resources/images/fork.svg" alt=""></button></button>
+        </div>
         </div>
       </div>
-      <div class="projects__card">
-        <span class="projects__name">Et, expedita eaque.</span>
-        <p class="projects__text">Repudiandae ducimus beatae in reiciendis autem, labore placeat, debitis obcaecati fuga dolorem, nam tempora minima pariatur sequi totam dolores ipsa.</p>
-        <div class="projects__buttons">
-          <button class="btn projects__favorite"><img src="resources/images/favorite.svg" alt=""></button>
-          <button class="btn projects__watch"><img src="resources/images/watch.svg" alt=""></button>
-          <button class="btn projects__fork"><img src="resources/images/fork.svg" alt=""></button></button>
+      <div class="projects__card bg_accent">
+        <div class="projects__card-inner">
+          <span class="projects__name">Et, expedita eaque.</span>
+          <p class="projects__text">Repudiandae ducimus beatae in reiciendis autem, labore placeat, debitis obcaecati fuga dolorem, nam tempora minima pariatur sequi totam dolores ipsa.</p>
+          <div class="projects__buttons">
+            <button class="btn projects__favorite"><img src="resources/images/favorite.svg" alt=""></button>
+            <button class="btn projects__watch"><img src="resources/images/watch.svg" alt=""></button>
+            <button class="btn projects__fork"><img src="resources/images/fork.svg" alt=""></button></button>
+        </div>
         </div>
       </div>
     </div>
