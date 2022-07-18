@@ -6,7 +6,7 @@ html, body {
 }
 .main {
     display: grid;
-    grid-template: 70px 85px auto / minmax(225px, 300px) 4fr;
+    grid-template: 70px 85px auto / minmax(225px, 275px) 4fr;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -44,7 +44,7 @@ img{
 
 .header {
     display: flex;
-    margin: 15px 30px 0px 30px;
+    margin: 15px 36px 0px 30px;
     gap: 20px;
     align-items: center;
     height: 50px;
@@ -54,12 +54,16 @@ img{
         border: none;
         height: 22px;
         flex-basis: 40%;
-        margin-right: 45%;
     }
 
     &__username {
         white-space: nowrap;
     }
+
+    &__notification {
+        margin-left: auto;
+    }
+
 
 }
 
@@ -74,7 +78,10 @@ img{
     &__text {
         display: flex;
         flex-direction: column;
-        margin-right: 60%;
+    }
+
+    &__new {
+        margin-left: auto;
     }
 
     &__icon {
@@ -86,22 +93,23 @@ img{
 
 .main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: 30 auto;
+    grid-template-rows: 30px auto;
     grid-column: 1;
     grid-row: 1 / -1;
     box-shadow: inset $base-shadow-top;
-    padding: 25px 20px;
+    padding: 25px 0px;
 
     &__header {
         grid-column: 1 / -1;
         height: 20px;
+        padding: 0px 0px 0px 25px;
     }
 
     &__card {
@@ -111,6 +119,7 @@ img{
         position: relative;
         height: auto;
         overflow: hidden;
+        box-shadow: $base-shadow
     }
 
     &__buttons {
@@ -118,6 +127,7 @@ img{
         position: absolute;
         bottom: 10px;
         margin: 5% 0% 0% 50%;
+        gap: 15px;
     }
 
     &__card-inner {
@@ -127,6 +137,10 @@ img{
         padding: 5% 10% 20% 5%;
     }
 
+    &__text {
+        margin: 5px 0px 0px 0px;
+    }
+
 }
 
 .announcements {
@@ -134,13 +148,75 @@ img{
     grid-column: 2;
     grid-row: 1;
     box-shadow: inset $base-shadow-top;
+    padding: 25px 15px 5px 0px;
+    grid-template-rows: 30px auto;
 
     &__header {
-        grid-column: 1 / -1;
+        height: 20px;
     }
+
+    &__wrapper {
+        display: grid;
+        margin: 16px 0px;
+        background-color: white;
+        border-radius: $base-border-radius-half;
+        padding: 25px 45px;
+        box-shadow: $base-shadow;
+    }
+
+    &__text {
+        border-bottom: 1px solid lighten($gray, 12);
+        padding-bottom: 16px;
+    }
+
+    &__text--final {
+        border-bottom: none;
+    }
+
 }
 
 .trending {
+    display: grid;
     grid-column: 2;
     grid-row: 2;
+    padding: 0px 15px 5px 0px;
+    grid-template-rows: 30px auto;
+
+    &__wrapper {
+        display: grid;
+        grid-template-rows: repeat(4, 70px);
+        margin: 16px 0px;
+        background-color: white;
+        border-radius: $base-border-radius-half;
+        padding: 10px 25px;
+        box-shadow: $base-shadow;
+        height: fit-content;
+    }
+
+    &__users {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 30px 30px;
+        height: 60px;
+
+        .img {
+            grid-column: 1;
+            grid-row: 1 / span 2;
+            height: 60px;
+            width: 60px;
+        }
+
+        .span {
+            grid-column: 2;
+        }
+    }
+
+    &__handle {
+        font-weight: bold;
+        align-self: end;
+    }
+
+    &__name {
+        color: darken($gray, 12)
+    }
 }
